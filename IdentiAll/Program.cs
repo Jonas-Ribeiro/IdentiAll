@@ -13,14 +13,29 @@ namespace IdentiAll
         static string subscriptionKey = "37668eee7bed44ba92d330ea1307188c";
         static string endpoint = "https://jamalvision.cognitiveservices.azure.com/";
 
-        // URL image used for analyzing an image (image of puppy)
-        private const string ANALYZE_URL_IMAGE = "https://s2.glbimg.com/t3vhFgnhaf7T-Wn4hvKMFXw-V7g=/0x0:388x541/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/B/p/x67NnlRDWN5JmV1pX6Zw/ronaldinho-na-prisao-01.jpg";
+        #region Images Test
+        // URL image used for analyzing an image (turn can caramel)
+        //private const string ANALYZE_URL_IMAGE = "https://tribunadejundiai.com.br/wp-content/uploads/2020/07/Screenshot_20200729-201823_Twitter-1200x675.jpg";
+        // URL image used for analyzing an image (Pepsi)
+        //private const string ANALYZE_URL_IMAGE = "https://1.bp.blogspot.com/-aczoJe0YxS0/U8BUXLiL5II/AAAAAAAAmSs/bEIDWfQy3BE/s1600/pepsi+twist+propaganda.jpg";
+        // URL image used for analyzing an image (Hot Dog Towner)
+        //private const string ANALYZE_URL_IMAGE = "https://static.vakinha.com.br/uploads/vakinha/image/97431/images.jpg?ims=700x410";
+        // URL image used for analyzing an image (Faustão eletrical barbecue grill)
+        //private const string ANALYZE_URL_IMAGE = "https://tvhistoria.com.br/wp-content/uploads/2020/04/churrasqueira-600x400.jpg";
+        // URL image used for analyzing an image (supermarket cart grill)
+        //private const string ANALYZE_URL_IMAGE = "https://images.virgula.com.br/2016/03/12670483_1115178645190819_1611457482391407274_n.jpg";
+        // URL image used for analyzing an image (old tv)
+        private const string ANALYZE_URL_IMAGE = "https://i.ytimg.com/vi/DyKOz2Sm2IY/maxresdefault.jpg";
+        #endregion
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Jamal Computer Vision!");
+            Console.WriteLine("----------------------");
+
             // Create a client
             ComputerVisionClient client = Authenticate(endpoint, subscriptionKey);
+
             // Analyze an image to get features and other properties.
             ImageAnalysis imageAnalysis = AnalyzeImageUrl(client, ANALYZE_URL_IMAGE).Result;
 
@@ -148,7 +163,7 @@ namespace IdentiAll
         VisualFeatureTypes.Objects
     };
             // Analyze the URL image 
-            var task = Task.Run(() => client.AnalyzeImageAsync(imageUrl, features));
+            Task<ImageAnalysis> task = Task.Run(() => client.AnalyzeImageAsync(imageUrl, features));
             task.Wait();            
 
             ImageAnalysis results = task.Result;
