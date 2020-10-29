@@ -1,7 +1,4 @@
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\IdentiAll.exe
-C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.csprojAssemblyReference.cache
-C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.AssemblyInfoInputs.cache
-C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.AssemblyInfo.cs
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\IdentiAll.deps.json
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\IdentiAll.runtimeconfig.json
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\IdentiAll.runtimeconfig.dev.json
@@ -11,6 +8,9 @@ C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\Micr
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.dll
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\Microsoft.Rest.ClientRuntime.Azure.dll
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.csprojAssemblyReference.cache
+C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.AssemblyInfoInputs.cache
+C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.AssemblyInfo.cs
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.csproj.CoreCompileInputs.cache
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.csproj.CopyComplete
 C:\Users\jonas\Documents\GitHub\IdentiAll\IdentiAll\obj\Debug\netcoreapp3.1\IdentiAll.dll

@@ -9,9 +9,11 @@ namespace IdentiAll
 {
     class Program
     {
-        // Add your Computer Vision subscription key and endpoint
-        static string subscriptionKey = "37668eee7bed44ba92d330ea1307188c";
-        static string endpoint = "https://jamalvision.cognitiveservices.azure.com/";
+        // Add your Computer Vision subscription key and endpoint;
+        // Subscription Key and endpoint you can find on "Home > YourCognitiveService > Keys and Endpoint"
+        static string subscriptionKey = "<your subscription ID>";
+        static string endpoint = "<your endpoint>";
+
 
         #region Images Test
         // URL image used for analyzing an image (turn can caramel)
@@ -25,14 +27,24 @@ namespace IdentiAll
         // URL image used for analyzing an image (supermarket cart grill)
         //private const string ANALYZE_URL_IMAGE = "https://images.virgula.com.br/2016/03/12670483_1115178645190819_1611457482391407274_n.jpg";
         // URL image used for analyzing an image (old tv)
-        private const string ANALYZE_URL_IMAGE = "https://i.ytimg.com/vi/DyKOz2Sm2IY/maxresdefault.jpg";
+        //private const string ANALYZE_URL_IMAGE = "https://i.ytimg.com/vi/DyKOz2Sm2IY/maxresdefault.jpg";
+        //Julius
+        //private const string ANALYZE_URL_IMAGE = "https://noticiasdatv.uol.com.br/media/_versions/everybody-hates-chris-julius-dia-dos-pais_fixed_large.jpg";
         #endregion
+        private static string ANALYZE_URL_IMAGE = string.Empty;
 
         static void Main(string[] args)
         {
             Console.WriteLine("Jamal Computer Vision!");
             Console.WriteLine("----------------------");
 
+            Console.WriteLine("Enter URL: ");
+            ANALYZE_URL_IMAGE = @Console.ReadLine();
+
+            if (string.IsNullOrEmpty(ANALYZE_URL_IMAGE))
+            {
+                throw new InvalidOperationException("Empty url");
+            }
             // Create a client
             ComputerVisionClient client = Authenticate(endpoint, subscriptionKey);
 
