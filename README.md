@@ -11,8 +11,10 @@ This beautiful repository is about a study that I did few months ago with cognit
 If you already have a subscription key and a endpoint, you can use this code to requisite de service, all you need to do is assign the variables below:
 
 '''
+
         static string subscriptionKey = "<your subscription ID>";
         static string endpoint = "<your endpoint>";        
+        
 '''
 
 Feel free to contact me!
