@@ -4,7 +4,7 @@
 ### About me
 I'm a backend developer since 2018, often improving my skills in .Net
 
-###IdentiAll
+### IdentiAll
 
 This beautiful repository is about a study that I did few months ago with cognitive services from Microsoft Azure, specifically computer vision.
 
